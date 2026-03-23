@@ -4,7 +4,7 @@ import { pillarCardClass, pillarDotClass } from "@/lib/pillar-styles";
 
 export function SixPillarsSection() {
   return (
-    <section className="border-t border-white/10 bg-black/20 py-16 sm:py-20">
+    <section className="border-t border-border-subtle bg-surface-band py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-3xl">
           <h2 className="font-serif text-3xl font-bold text-gradient-gold sm:text-4xl">
@@ -25,21 +25,21 @@ export function SixPillarsSection() {
                   aria-hidden
                 />
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-rmec-white/60">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-body-primary/60">
                     Pillar {p.n}
                   </p>
-                  <h3 className="mt-1 font-serif text-xl font-semibold text-rmec-white">
+                  <h3 className="mt-1 font-serif text-xl font-semibold text-body-primary">
                     {p.title}
                   </h3>
                 </div>
               </div>
-              <p className="mt-3 text-sm leading-relaxed text-rmec-white/80">
+              <p className="mt-3 text-sm leading-relaxed text-body-primary/80">
                 {p.summary}
               </p>
               <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-rmec-gold/90">
                 Operational arm
               </p>
-              <p className="mt-1 text-sm font-medium text-rmec-white">
+              <p className="mt-1 text-sm font-medium text-body-primary">
                 {p.operationalArm}
               </p>
               <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted">
@@ -51,11 +51,11 @@ export function SixPillarsSection() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-xl border border-rmec-gold/25 bg-rmec-navy-mid/50 p-6 sm:p-8">
+        <div className="mt-12 rounded-xl border border-rmec-gold/25 bg-surface-panel p-6 sm:p-8">
           <p className="font-serif text-lg font-semibold text-rmec-gold-light">
             Apostolic declaration
           </p>
-          <p className="mt-2 max-w-3xl text-rmec-white/90 leading-relaxed">
+          <p className="mt-2 max-w-3xl text-body-primary/90 leading-relaxed">
             {site.apostolicDeclaration}
           </p>
           <Link

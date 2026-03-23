@@ -24,7 +24,7 @@ export default function VisionMandatePage() {
         <h1 className="mt-3 font-serif text-4xl font-bold text-gradient-gold sm:text-5xl">
           Apostolic vision & mandate
         </h1>
-        <p className="mt-4 text-lg text-rmec-white/85">{vision.tagline}</p>
+        <p className="mt-4 text-lg text-body-primary/85">{vision.tagline}</p>
       </div>
 
       <div className="mt-12 grid gap-12 lg:grid-cols-5 lg:gap-16">
@@ -40,11 +40,11 @@ export default function VisionMandatePage() {
             </div>
           </section>
 
-          <section className="rounded-xl border border-white/10 bg-rmec-navy-mid/40 p-6 sm:p-8">
-            <h2 className="font-serif text-xl font-semibold text-rmec-white">
+          <section className="rounded-xl border border-border-subtle bg-surface-panel p-6 sm:p-8">
+            <h2 className="font-serif text-xl font-semibold text-body-primary">
               Short version (conferences & banners)
             </h2>
-            <p className="mt-3 max-w-prose text-rmec-white/85 leading-relaxed">
+            <p className="mt-3 max-w-prose text-body-primary/85 leading-relaxed">
               {vision.conference}
             </p>
           </section>
@@ -72,7 +72,7 @@ export default function VisionMandatePage() {
                     {i + 1}
                   </span>
                   <div>
-                    <h3 className="font-semibold text-rmec-white">{a.title}</h3>
+                    <h3 className="font-semibold text-body-primary">{a.title}</h3>
                     <p className="mt-2 max-w-prose text-sm text-muted leading-relaxed">
                       {a.body}
                     </p>
@@ -82,14 +82,14 @@ export default function VisionMandatePage() {
             </ol>
           </section>
 
-          <section className="rounded-xl border border-rmec-gold/25 bg-black/20 p-6 sm:p-8">
+          <section className="rounded-xl border border-rmec-gold/25 bg-surface-dim p-6 sm:p-8">
             <h2 className="font-serif text-2xl font-semibold text-rmec-gold-light">
               Core purpose
             </h2>
-            <p className="mt-4 max-w-prose text-rmec-white/90 leading-relaxed">
+            <p className="mt-4 max-w-prose text-body-primary/90 leading-relaxed">
               {corePurpose}
             </p>
-            <p className="mt-6 max-w-prose border-l-2 border-rmec-gold/50 pl-4 text-sm italic text-rmec-white/80">
+            <p className="mt-6 max-w-prose border-l-2 border-rmec-gold/50 pl-4 text-sm italic text-body-primary/80">
               {site.apostolicDeclaration}
             </p>
           </section>
@@ -104,7 +104,7 @@ export default function VisionMandatePage() {
 
         <aside className="lg:col-span-2">
           <div className="sticky top-24 space-y-6">
-            <div className="overflow-hidden rounded-2xl border border-white/10 shadow-[var(--shadow-card)]">
+            <div className="overflow-hidden rounded-2xl border border-border-subtle shadow-[var(--shadow-card)]">
               <Image
                 src="/brand/rmec-banner-2.png"
                 alt="RMEC International identity and pillars"
@@ -114,7 +114,7 @@ export default function VisionMandatePage() {
                 sizes="(max-width: 1024px) 100vw, 360px"
               />
             </div>
-            <p className="text-center text-xs uppercase tracking-widest text-rmec-white/50">
+            <p className="text-center text-xs uppercase tracking-widest text-body-primary/50">
               {site.ribbonGoals}
             </p>
           </div>

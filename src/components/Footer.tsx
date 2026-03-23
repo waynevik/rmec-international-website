@@ -9,7 +9,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-white/10 bg-black/30">
+    <footer className="mt-auto border-t border-border-subtle bg-surface-footer">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div>
@@ -24,7 +24,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <p className="text-sm font-semibold text-rmec-white">Navigate</p>
+            <p className="text-sm font-semibold text-body-primary">Navigate</p>
             <ul className="mt-3 space-y-2 text-sm text-muted">
               {footerLinks.map((l) => (
                 <li key={l.href}>
@@ -39,7 +39,7 @@ export function Footer() {
             </ul>
           </div>
           <div className="lg:col-span-1">
-            <p className="text-sm font-semibold text-rmec-white">Leadership</p>
+            <p className="text-sm font-semibold text-body-primary">Leadership</p>
             <p className="mt-3 font-serif text-lg text-rmec-gold-light">
               {site.founder}
             </p>
@@ -47,7 +47,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-white/5 py-4 text-center text-xs text-muted">
+      <div className="border-t border-surface-footer-divider py-4 text-center text-xs text-muted">
         © {new Date().getFullYear()} {site.name}. All rights reserved.
       </div>
     </footer>

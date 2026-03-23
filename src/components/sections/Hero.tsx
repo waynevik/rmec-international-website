@@ -25,13 +25,13 @@ export function Hero() {
               {site.name}
             </span>
           </h1>
-          <p className="mt-2 text-lg text-rmec-white/85 sm:text-xl">
+          <p className="mt-2 text-lg text-body-primary/85 sm:text-xl">
             {site.legalName}
           </p>
-          <p className="mt-4 max-w-xl text-sm italic leading-relaxed text-rmec-white/75 sm:text-base">
+          <p className="mt-4 max-w-xl text-sm italic leading-relaxed text-body-primary/75 sm:text-base">
             {site.ecosystemLine}
           </p>
-          <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-rmec-white/90">
+          <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-body-primary/90">
             {site.taglineShort}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -43,7 +43,7 @@ export function Hero() {
             </Link>
             <Link
               href="/pillars"
-              className="inline-flex items-center justify-center rounded-md border border-rmec-gold/50 px-5 py-3 text-sm font-semibold text-rmec-gold transition hover:border-rmec-gold hover:bg-white/5"
+              className="inline-flex items-center justify-center rounded-md border border-rmec-gold/50 px-5 py-3 text-sm font-semibold text-rmec-gold transition hover:border-rmec-gold hover:bg-nav-hover"
             >
               Seven pillars framework
             </Link>
@@ -53,7 +53,7 @@ export function Hero() {
         <div className="order-1 lg:order-2">
           <div className="relative mx-auto max-w-md lg:max-w-none">
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-rmec-gold/20 via-transparent to-rmec-royal/20 blur-2xl" />
-            <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-[var(--shadow-card)] ring-1 ring-rmec-gold/20">
+            <div className="relative overflow-hidden rounded-2xl border border-border-subtle shadow-[var(--shadow-card)] ring-1 ring-rmec-gold/20">
               <Image
                 src="/brand/rmec-banner-1.png"
                 alt="RMEC International — global mission and apostolic ecosystem"

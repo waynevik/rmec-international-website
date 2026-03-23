@@ -34,22 +34,22 @@ export default function ContactPage() {
           For partnerships, ministry inquiries, and general information about{" "}
           {site.name}, please reach out through the channels below. You can
           replace placeholder values using environment variables{" "}
-          <code className="rounded bg-white/10 px-1.5 py-0.5 text-xs text-rmec-gold">
+          <code className="rounded bg-code-bg px-1.5 py-0.5 text-xs text-rmec-gold">
             NEXT_PUBLIC_RMEC_CONTACT_EMAIL
           </code>{" "}
           and{" "}
-          <code className="rounded bg-white/10 px-1.5 py-0.5 text-xs text-rmec-gold">
+          <code className="rounded bg-code-bg px-1.5 py-0.5 text-xs text-rmec-gold">
             NEXT_PUBLIC_RMEC_CONTACT_PHONE
           </code>
           .
         </p>
       </div>
 
-      <div className="mt-10 max-w-xl rounded-xl border border-white/10 bg-rmec-navy-mid/40 p-8 shadow-[var(--shadow-card)]">
+      <div className="mt-10 max-w-xl rounded-xl border border-border-subtle bg-surface-panel p-8 shadow-[var(--shadow-card)]">
         <p className="text-sm font-semibold uppercase tracking-wide text-rmec-gold/90">
           Organisation
         </p>
-        <p className="mt-2 font-serif text-xl font-semibold text-rmec-white">
+        <p className="mt-2 font-serif text-xl font-semibold text-body-primary">
           {site.name}
         </p>
         <p className="mt-1 text-sm text-muted">{site.legalName}</p>
@@ -61,7 +61,7 @@ export default function ContactPage() {
             </p>
             <a
               href={`mailto:${email}`}
-              className="mt-2 inline-block text-rmec-white underline decoration-rmec-gold/50 underline-offset-4 hover:text-rmec-gold"
+              className="mt-2 inline-block text-body-primary underline decoration-rmec-gold/50 underline-offset-4 hover:text-rmec-gold"
             >
               {email}
             </a>
@@ -73,7 +73,7 @@ export default function ContactPage() {
               </p>
               <a
                 href={`tel:${phone.replace(/\s/g, "")}`}
-                className="mt-2 inline-block text-rmec-white hover:text-rmec-gold"
+                className="mt-2 inline-block text-body-primary hover:text-rmec-gold"
               >
                 {phone}
               </a>
@@ -81,7 +81,7 @@ export default function ContactPage() {
           ) : (
             <p className="text-sm text-muted">
               Phone number can be configured via{" "}
-              <code className="rounded bg-white/10 px-1 text-xs">
+              <code className="rounded bg-code-bg px-1 text-xs">
                 NEXT_PUBLIC_RMEC_CONTACT_PHONE
               </code>
               .

@@ -1,15 +1,90 @@
 @import "tailwindcss";
 
 :root {
+  --background: #eef2f7;
+  --foreground: #0a1628;
+  --muted: #5a6b7d;
+
+  --body-primary: #0c1929;
+
+  --border-subtle: rgb(0 31 63 / 0.12);
+  --border-medium: rgb(0 31 63 / 0.18);
+
+  --surface-header: rgb(248 250 252 / 0.92);
+  --surface-header-mobile: rgb(248 250 252 / 0.97);
+  --surface-footer: rgb(236 242 249 / 0.92);
+  --surface-footer-divider: rgb(0 31 63 / 0.08);
+  --surface-band: rgb(0 31 63 / 0.04);
+  --surface-panel: rgb(255 255 255 / 0.72);
+  --surface-dim: rgb(0 31 63 / 0.05);
+  --nav-active-bg: rgb(0 31 63 / 0.08);
+  --nav-hover-bg: rgb(0 31 63 / 0.06);
+  --code-bg: rgb(0 31 63 / 0.08);
+
+  --body-gradient: radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      rgb(212 175 55 / 0.2),
+      transparent 55%
+    ),
+    linear-gradient(180deg, #f5f7fb 0%, #e4eaf2 100%);
+  --body-base: #e8eef4;
+
+  --shadow-card: 0 25px 50px -12px rgb(0 31 63 / 0.12);
+  --shadow-gold-glow: 0 0 40px rgb(212 175 55 / 0.22);
+}
+
+.dark {
   --background: #000d1f;
   --foreground: #f1f5f9;
   --muted: #94a3b8;
+
+  --body-primary: #f8fafc;
+
+  --border-subtle: rgb(255 255 255 / 0.1);
+  --border-medium: rgb(255 255 255 / 0.15);
+
+  --surface-header: rgb(0 13 31 / 0.85);
+  --surface-header-mobile: rgb(0 13 31 / 0.95);
+  --surface-footer: rgb(0 0 0 / 0.3);
+  --surface-footer-divider: rgb(255 255 255 / 0.05);
+  --surface-band: rgb(0 0 0 / 0.2);
+  --surface-panel: rgb(10 37 64 / 0.4);
+  --surface-dim: rgb(0 0 0 / 0.2);
+  --nav-active-bg: rgb(255 255 255 / 0.1);
+  --nav-hover-bg: rgb(255 255 255 / 0.05);
+  --code-bg: rgb(255 255 255 / 0.1);
+
+  --body-gradient: radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      rgb(212 175 55 / 0.12),
+      transparent 55%
+    ),
+    linear-gradient(180deg, #001f3f 0%, #000814 100%);
+  --body-base: #000d1f;
+
+  --shadow-card: 0 25px 50px -12px rgb(0 0 0 / 0.45);
+  --shadow-gold-glow: 0 0 40px rgb(212 175 55 / 0.25);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-body-primary: var(--body-primary);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-medium: var(--border-medium);
+
+  --color-surface-header: var(--surface-header);
+  --color-surface-header-mobile: var(--surface-header-mobile);
+  --color-surface-footer: var(--surface-footer);
+  --color-surface-footer-divider: var(--surface-footer-divider);
+  --color-surface-band: var(--surface-band);
+  --color-surface-panel: var(--surface-panel);
+  --color-surface-dim: var(--surface-dim);
+  --color-nav-active: var(--nav-active-bg);
+  --color-nav-hover: var(--nav-hover-bg);
+  --color-code-bg: var(--code-bg);
 
   --color-rmec-navy: #001f3f;
   --color-rmec-navy-deep: #000d1f;
@@ -27,19 +102,11 @@
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
-
-  --shadow-gold-glow: 0 0 40px rgba(212, 175, 55, 0.25);
-  --shadow-card: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
 }
 
 body {
-  background: radial-gradient(
-      ellipse 120% 80% at 50% -20%,
-      rgba(212, 175, 55, 0.12),
-      transparent 55%
-    ),
-    linear-gradient(180deg, var(--color-rmec-navy-deep) 0%, #000814 100%);
-  background-color: var(--color-rmec-navy-deep);
+  background: var(--body-gradient);
+  background-color: var(--body-base);
   color: var(--foreground);
   font-family: var(--font-sans);
 }

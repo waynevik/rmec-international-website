@@ -48,16 +48,16 @@ export default function PillarsPage() {
                   aria-hidden
                 />
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-rmec-white/60">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-body-primary/60">
                     Pillar {p.n}
                   </p>
-                  <h2 className="mt-1 font-serif text-2xl font-semibold text-rmec-white">
+                  <h2 className="mt-1 font-serif text-2xl font-semibold text-body-primary">
                     {p.title}
                   </h2>
                 </div>
               </div>
             </div>
-            <p className="mt-4 max-w-3xl text-rmec-white/85 leading-relaxed">
+            <p className="mt-4 max-w-3xl text-body-primary/85 leading-relaxed">
               {p.intro}
             </p>
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
@@ -65,7 +65,7 @@ export default function PillarsPage() {
                 <p className="text-xs font-semibold uppercase tracking-wide text-rmec-gold/90">
                   Operational arm
                 </p>
-                <p className="mt-1 font-medium text-rmec-white">
+                <p className="mt-1 font-medium text-body-primary">
                   {p.operationalArm}
                 </p>
                 {p.platform ? (
@@ -73,7 +73,7 @@ export default function PillarsPage() {
                     <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-rmec-gold/90">
                       Platform
                     </p>
-                    <p className="mt-1 font-medium text-rmec-white">
+                    <p className="mt-1 font-medium text-body-primary">
                       {p.platform}
                     </p>
                   </>
@@ -94,7 +94,7 @@ export default function PillarsPage() {
         ))}
       </div>
 
-      <p className="mx-auto mt-14 max-w-3xl text-center text-lg text-rmec-white/90 leading-relaxed">
+      <p className="mx-auto mt-14 max-w-3xl text-center text-lg text-body-primary/90 leading-relaxed">
         {sevenPillarsSummary}
       </p>
     </div>
