@@ -2,6 +2,13 @@ export const upcomingEvent = {
   title: "RMEC International Launch & Apostolic Consecration",
   subtitle:
     "The official launch of RMEC International and the apostolic consecration of Apostle Vincent Prince Obonyo — Founder and Presiding Apostle.",
+  /** When set, each line appears under “Event details”. Leave blank until confirmed. */
+  logistics: {
+    date: "",
+    time: "",
+    venue: "",
+    note: "",
+  },
   verse: {
     text: "Go therefore and make disciples of all nations.",
     ref: "Matthew 28:19",

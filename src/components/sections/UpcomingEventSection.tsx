@@ -3,7 +3,15 @@ import Link from "next/link";
 import { upcomingEvent } from "@/content/upcoming-event";
 import { EventSupportButton } from "@/components/sections/EventSupportButton";
 
+function hasLogisticsDetails() {
+  const { date, time, venue, note } = upcomingEvent.logistics;
+  return Boolean(date.trim() || time.trim() || venue.trim() || note.trim());
+}
+
 export function UpcomingEventSection() {
+  const logistics = upcomingEvent.logistics;
+  const hasDetails = hasLogisticsDetails();
+
   return (
     <section
       className="border-t border-border-subtle bg-surface-band py-16 sm:py-20"
@@ -32,6 +40,57 @@ export function UpcomingEventSection() {
                 {upcomingEvent.verse.ref}
               </figcaption>
             </figure>
+            <div className="mt-6 rounded-lg border border-border-subtle bg-surface-panel px-4 py-4 sm:px-5">
+              <p className="text-xs font-semibold uppercase tracking-widest text-rmec-gold/90">
+                Event details
+              </p>
+              {hasDetails ? (
+                <dl className="mt-3 space-y-2 text-sm">
+                  {logistics.date ? (
+                    <div className="flex flex-col gap-0.5 sm:flex-row sm:gap-3">
+                      <dt className="shrink-0 font-medium text-body-primary">
+                        Date
+                      </dt>
+                      <dd className="text-muted">{logistics.date}</dd>
+                    </div>
+                  ) : null}
+                  {logistics.time ? (
+                    <div className="flex flex-col gap-0.5 sm:flex-row sm:gap-3">
+                      <dt className="shrink-0 font-medium text-body-primary">
+                        Time
+                      </dt>
+                      <dd className="text-muted">{logistics.time}</dd>
+                    </div>
+                  ) : null}
+                  {logistics.venue ? (
+                    <div className="flex flex-col gap-0.5 sm:flex-row sm:gap-3">
+                      <dt className="shrink-0 font-medium text-body-primary">
+                        Venue
+                      </dt>
+                      <dd className="text-muted">{logistics.venue}</dd>
+                    </div>
+                  ) : null}
+                  {logistics.note ? (
+                    <p className="pt-1 text-sm leading-relaxed text-muted">
+                      {logistics.note}
+                    </p>
+                  ) : null}
+                </dl>
+              ) : (
+                <p className="mt-3 text-sm leading-relaxed text-muted">
+                  Schedule and venue will be published here when confirmed. For
+                  updates, use{" "}
+                  <Link
+                    href="/contact"
+                    className="font-medium text-rmec-gold underline decoration-rmec-gold/40 underline-offset-2 hover:text-rmec-gold-light"
+                  >
+                    Contact
+                  </Link>{" "}
+                  or open <strong className="text-body-primary/90">Support</strong>{" "}
+                  on this event.
+                </p>
+              )}
+            </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
                 href="/founder"
