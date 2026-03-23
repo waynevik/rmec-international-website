@@ -2,7 +2,16 @@ export const supportConsecration = {
   title: "Support the consecration & launch",
   intro:
     "Your partnership helps us honour this apostolic moment and carry the launch forward with excellence. Here are meaningful ways to stand with RMEC International.",
+  payment: {
+    paybillNumber: "4096157",
+    paybillName: "Ministers Training Institute",
+    accountName: "Consecration",
+  },
   ways: [
+    {
+      heading: "Financial support",
+      body: "Support the consecration through Paybill Number 4096157, Account: Consecration. Your giving helps cover venue, logistics, hospitality, and media so the launch is communicated with dignity.",
+    },
     {
       heading: "Prayer",
       body: "Uphold Apostle Vincent Prince Obonyo, the leadership team, and every guest and delegate in prayer — for unity, clarity, and a lasting move of God.",
@@ -10,10 +19,6 @@ export const supportConsecration = {
     {
       heading: "Presence & witness",
       body: "Join us in person where you are able, and invite others who are called to witness this commissioning and the birth of RMEC International as a global apostolic ecosystem.",
-    },
-    {
-      heading: "Partnership & giving",
-      body: "Financial and in-kind support helps cover venue, logistics, hospitality, and media so the consecration and launch are communicated with dignity. For specific giving instructions, bank details, or receipts, please contact the office — we will respond with the appropriate channels for your region.",
     },
     {
       heading: "Volunteering",

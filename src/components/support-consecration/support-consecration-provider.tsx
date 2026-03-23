@@ -114,6 +114,33 @@ export function SupportConsecrationProvider({
             <p className="mt-4 text-sm leading-relaxed text-muted">
               {supportConsecration.intro}
             </p>
+            <div className="mt-5 rounded-lg border border-rmec-gold/35 bg-rmec-gold/10 p-4">
+              <p className="text-xs font-semibold uppercase tracking-widest text-rmec-gold">
+                Payment details
+              </p>
+              <dl className="mt-3 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-md border border-rmec-gold/30 bg-surface-panel px-3 py-2.5">
+                  <dt className="text-xs uppercase tracking-wide text-muted">
+                    Paybill Number
+                  </dt>
+                  <dd className="mt-1 text-base font-semibold text-body-primary">
+                    {supportConsecration.payment.paybillNumber}
+                  </dd>
+                </div>
+                <div className="rounded-md border border-rmec-gold/30 bg-surface-panel px-3 py-2.5">
+                  <dt className="text-xs uppercase tracking-wide text-muted">
+                    Account
+                  </dt>
+                  <dd className="mt-1 text-base font-semibold text-body-primary">
+                    {supportConsecration.payment.accountName}
+                  </dd>
+                </div>
+              </dl>
+              <p className="mt-3 text-sm text-body-primary/90">
+                <span className="font-semibold text-rmec-gold">Paybill Name:</span>{" "}
+                {supportConsecration.payment.paybillName}
+              </p>
+            </div>
             <ul className="mt-6 space-y-5">
               {supportConsecration.ways.map((w) => (
                 <li key={w.heading}>
