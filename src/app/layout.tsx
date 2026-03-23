@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { SupportConsecrationProvider } from "@/components/support-consecration/support-consecration-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import { site } from "@/content/rmec";
 import "./globals.css";
@@ -58,9 +59,11 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <ThemeProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <SupportConsecrationProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </SupportConsecrationProvider>
         </ThemeProvider>
       </body>
     </html>

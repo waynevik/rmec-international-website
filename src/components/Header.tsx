@@ -10,6 +10,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/vision-mandate", label: "Vision & Mandate" },
   { href: "/pillars", label: "Pillars" },
+  { href: "/founder", label: "Founder" },
   { href: "/contact", label: "Contact" },
 ] as const;
 

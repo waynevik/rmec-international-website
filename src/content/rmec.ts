@@ -1,7 +1,7 @@
 export const site = {
   name: "RMEC International",
   legalName: "Royal Ministers Evangelistic Churches International",
-  founder: "Apostle Vincent Prince",
+  founder: "Apostle Vincent Prince Obonyo",
   founderTitle: "Founder & Presiding Apostle",
   ribbonGoals:
     "Raising Leaders • Strengthening Churches • Transforming Communities • Influencing Nations",

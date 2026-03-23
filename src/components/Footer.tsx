@@ -4,6 +4,7 @@ import { site } from "@/content/rmec";
 const footerLinks = [
   { href: "/vision-mandate", label: "Vision & Mandate" },
   { href: "/pillars", label: "Seven Pillars" },
+  { href: "/founder", label: "Founder" },
   { href: "/contact", label: "Contact" },
 ] as const;
 

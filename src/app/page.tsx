@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { FounderStrip } from "@/components/sections/FounderStrip";
 import { Hero } from "@/components/sections/Hero";
 import { SixPillarsSection } from "@/components/sections/SixPillarsSection";
+import { UpcomingEventSection } from "@/components/sections/UpcomingEventSection";
 import { site } from "@/content/rmec";
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <UpcomingEventSection />
       <SixPillarsSection />
       <FounderStrip />
     </>
