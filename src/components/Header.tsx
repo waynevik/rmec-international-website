@@ -52,12 +52,12 @@ export function Header() {
           className="flex items-center gap-3 shrink-0"
           onClick={() => setOpen(false)}
         >
-          <span className="relative h-11 w-11 overflow-hidden rounded-full ring-2 ring-rmec-gold/40 shadow-[var(--shadow-gold-glow)]">
+          <span className="relative h-11 w-11 overflow-hidden rounded-md ring-1 ring-rmec-gold/40 shadow-[var(--shadow-gold-glow)]">
             <Image
-              src="/brand/rmec-banner-2.png"
-              alt="RMEC International emblem"
+              src="/brand/rmec-official-logo.png"
+              alt="RMEC International official logo"
               fill
-              className="object-cover object-top scale-[2.2]"
+              className="object-contain p-0.5"
               sizes="44px"
               priority
             />

@@ -106,11 +106,11 @@ export default function VisionMandatePage() {
           <div className="sticky top-24 space-y-6">
             <div className="overflow-hidden rounded-2xl border border-border-subtle shadow-[var(--shadow-card)]">
               <Image
-                src="/brand/rmec-banner-2.png"
-                alt="RMEC International identity and pillars"
+                src="/brand/rmec-official-logo.png"
+                alt="RMEC International official logo"
                 width={640}
                 height={900}
-                className="h-auto w-full object-cover"
+                className="h-auto w-full object-contain bg-surface-panel p-6"
                 sizes="(max-width: 1024px) 100vw, 360px"
               />
             </div>

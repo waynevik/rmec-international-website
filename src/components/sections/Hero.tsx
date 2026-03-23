@@ -55,11 +55,11 @@ export function Hero() {
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-rmec-gold/20 via-transparent to-rmec-royal/20 blur-2xl" />
             <div className="relative overflow-hidden rounded-2xl border border-border-subtle shadow-[var(--shadow-card)] ring-1 ring-rmec-gold/20">
               <Image
-                src="/brand/rmec-banner-1.png"
-                alt="RMEC International — global mission and apostolic ecosystem"
+                src="/brand/rmec-official-logo.png"
+                alt="RMEC International official logo"
                 width={900}
                 height={1200}
-                className="h-auto w-full object-cover object-top"
+                className="h-auto w-full object-contain bg-surface-panel p-6 sm:p-8"
                 priority
                 sizes="(max-width: 1024px) 100vw, 480px"
               />
