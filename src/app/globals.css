@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000d1f;
+  --foreground: #f1f5f9;
+  --muted: #94a3b8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-muted: var(--muted);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-rmec-navy: #001f3f;
+  --color-rmec-navy-deep: #000d1f;
+  --color-rmec-navy-mid: #0a2540;
+  --color-rmec-gold: #d4af37;
+  --color-rmec-gold-light: #f4d03f;
+  --color-rmec-gold-accent: #ffd700;
+  --color-rmec-white: #f8fafc;
+  --color-rmec-maroon: #8b0000;
+  --color-rmec-royal: #002366;
+  --color-rmec-forest: #228b22;
+  --color-rmec-purple: #4b0082;
+  --color-rmec-missions: #0e7490;
+  --color-rmec-compassion: #9f1239;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+
+  --shadow-gold-glow: 0 0 40px rgba(212, 175, 55, 0.25);
+  --shadow-card: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      rgba(212, 175, 55, 0.12),
+      transparent 55%
+    ),
+    linear-gradient(180deg, var(--color-rmec-navy-deep) 0%, #000814 100%);
+  background-color: var(--color-rmec-navy-deep);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f4d03f 0%, #d4af37 45%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
