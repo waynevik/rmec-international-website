@@ -13,10 +13,7 @@ export function UpcomingEventSection() {
   const hasDetails = hasLogisticsDetails();
 
   return (
-    <section
-      className="border-t border-border-subtle bg-surface-band py-16 sm:py-20"
-      aria-labelledby="upcoming-event-heading"
-    >
+    <section className="section-band py-16 sm:py-20" aria-labelledby="upcoming-event-heading">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
           <div className="order-2 lg:order-1">
@@ -40,7 +37,7 @@ export function UpcomingEventSection() {
                 {upcomingEvent.verse.ref}
               </figcaption>
             </figure>
-            <div className="mt-6 rounded-lg border border-border-subtle bg-surface-panel px-4 py-4 sm:px-5">
+            <div className="glass-panel mt-6 px-4 py-4 sm:px-5">
               <p className="text-xs font-semibold uppercase tracking-widest text-rmec-gold/90">
                 Event details
               </p>
@@ -94,7 +91,7 @@ export function UpcomingEventSection() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
                 href="/founder"
-                className="inline-flex items-center justify-center rounded-md bg-rmec-gold px-5 py-3 text-sm font-semibold text-rmec-navy-deep shadow-[var(--shadow-gold-glow)] transition hover:bg-rmec-gold-light"
+                className="cta-primary"
               >
                 More
               </Link>
@@ -128,7 +125,7 @@ export function UpcomingEventSection() {
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <div className="relative overflow-hidden rounded-2xl border border-border-subtle bg-surface-panel shadow-[var(--shadow-card)] ring-1 ring-rmec-gold/15">
+            <div className="glass-panel relative overflow-hidden ring-1 ring-rmec-gold/15">
               <Image
                 src={upcomingEvent.imageSrc}
                 alt={upcomingEvent.imageAlt}

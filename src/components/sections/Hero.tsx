@@ -4,9 +4,9 @@ import { site } from "@/content/rmec";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden py-8 sm:py-10">
       <div
-        className="pointer-events-none absolute -top-32 left-1/2 h-[32rem] w-[120%] -translate-x-1/2 opacity-40"
+        className="pointer-events-none absolute -top-36 left-1/2 h-[34rem] w-[120%] -translate-x-1/2 opacity-40"
         aria-hidden
       >
         <div
@@ -15,7 +15,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:items-center lg:py-16">
+      <div className="section-shell relative mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:px-8 lg:grid-cols-2 lg:items-center lg:py-12">
         <div className="order-2 lg:order-1">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-rmec-gold/90">
             {site.ribbonGoals}
@@ -37,13 +37,13 @@ export function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link
               href="/vision-mandate"
-              className="inline-flex items-center justify-center rounded-md bg-rmec-gold px-5 py-3 text-sm font-semibold text-rmec-navy-deep shadow-[var(--shadow-gold-glow)] transition hover:bg-rmec-gold-light"
+              className="cta-primary"
             >
               Apostolic vision & mandate
             </Link>
             <Link
               href="/pillars"
-              className="inline-flex items-center justify-center rounded-md border border-rmec-gold/50 px-5 py-3 text-sm font-semibold text-rmec-gold transition hover:border-rmec-gold hover:bg-nav-hover"
+              className="cta-secondary"
             >
               Seven pillars framework
             </Link>

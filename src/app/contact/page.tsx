@@ -45,7 +45,7 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <div className="mt-10 max-w-xl rounded-xl border border-border-subtle bg-surface-panel p-8 shadow-[var(--shadow-card)]">
+      <div className="glass-panel mt-10 max-w-xl p-8">
         <p className="text-sm font-semibold uppercase tracking-wide text-rmec-gold/90">
           Organisation
         </p>

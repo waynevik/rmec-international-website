@@ -40,7 +40,7 @@ export default function VisionMandatePage() {
             </div>
           </section>
 
-          <section className="rounded-xl border border-border-subtle bg-surface-panel p-6 sm:p-8">
+          <section className="glass-panel p-6 sm:p-8">
             <h2 className="font-serif text-xl font-semibold text-body-primary">
               Short version (conferences & banners)
             </h2>
@@ -82,7 +82,7 @@ export default function VisionMandatePage() {
             </ol>
           </section>
 
-          <section className="rounded-xl border border-rmec-gold/25 bg-surface-dim p-6 sm:p-8">
+          <section className="glass-panel border-rmec-gold/25 bg-surface-dim p-6 sm:p-8">
             <h2 className="font-serif text-2xl font-semibold text-rmec-gold-light">
               Core purpose
             </h2>
@@ -104,7 +104,7 @@ export default function VisionMandatePage() {
 
         <aside className="lg:col-span-2">
           <div className="sticky top-24 space-y-6">
-            <div className="overflow-hidden rounded-2xl border border-border-subtle shadow-[var(--shadow-card)]">
+            <div className="glass-panel overflow-hidden">
               <Image
                 src="/brand/rmec-official-logo.png"
                 alt="RMEC International official logo"

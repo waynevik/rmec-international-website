@@ -37,6 +37,8 @@
 
   --shadow-card: 0 25px 50px -12px rgb(0 27 58 / 0.14);
   --shadow-gold-glow: 0 0 44px rgb(212 175 55 / 0.28);
+  --shadow-soft: 0 10px 30px -18px rgb(0 27 58 / 0.26);
+  --radius-shell: 1.25rem;
 }
 
 .dark {
@@ -70,6 +72,7 @@
 
   --shadow-card: 0 25px 50px -12px rgb(0 0 0 / 0.45);
   --shadow-gold-glow: 0 0 40px rgb(212 175 55 / 0.25);
+  --shadow-soft: 0 12px 30px -16px rgb(0 0 0 / 0.5);
 }
 
 @theme inline {
@@ -122,4 +125,64 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.section-shell {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-shell);
+  background: var(--surface-panel);
+  box-shadow: var(--shadow-card);
+}
+
+.section-band {
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--surface-band);
+}
+
+.glass-panel {
+  border: 1px solid var(--border-subtle);
+  border-radius: 1rem;
+  background: color-mix(in oklab, var(--surface-panel) 90%, transparent);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-soft);
+}
+
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--color-rmec-navy-deep);
+  background: linear-gradient(145deg, #f4d03f 0%, #d4af37 58%, #c0962e 100%);
+  box-shadow: var(--shadow-gold-glow);
+  transition: transform 150ms ease, filter 150ms ease;
+}
+
+.cta-primary:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 600;
+  border: 1px solid color-mix(in oklab, var(--color-rmec-gold) 55%, transparent);
+  color: var(--color-rmec-gold);
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.cta-secondary:hover {
+  border-color: var(--color-rmec-gold);
+  background: var(--nav-hover-bg);
 }

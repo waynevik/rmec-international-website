@@ -39,7 +39,7 @@ export default function PillarsPage() {
         {sevenPillars.map((p) => (
           <article
             key={p.n}
-            className={`rounded-xl border p-6 ring-1 sm:p-8 ${pillarCardClass(p.accent)}`}
+            className={`glass-panel p-6 sm:p-8 ${pillarCardClass(p.accent)}`}
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div className="flex items-start gap-4">

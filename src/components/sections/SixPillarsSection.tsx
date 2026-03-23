@@ -4,7 +4,7 @@ import { pillarCardClass, pillarDotClass } from "@/lib/pillar-styles";
 
 export function SixPillarsSection() {
   return (
-    <section className="border-t border-border-subtle bg-surface-band py-16 sm:py-20">
+    <section className="section-band py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-3xl">
           <h2 className="font-serif text-3xl font-bold text-gradient-gold sm:text-4xl">
@@ -17,7 +17,7 @@ export function SixPillarsSection() {
           {sixPillars.map((p) => (
             <article
               key={p.n}
-              className={`rounded-xl border p-6 ring-1 backdrop-blur-sm transition hover:ring-rmec-gold/30 ${pillarCardClass(p.accent)}`}
+              className={`glass-panel p-6 transition hover:-translate-y-0.5 hover:ring-rmec-gold/40 ${pillarCardClass(p.accent)}`}
             >
               <div className="flex items-start gap-3">
                 <span
@@ -51,7 +51,7 @@ export function SixPillarsSection() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-xl border border-rmec-gold/25 bg-surface-panel p-6 sm:p-8">
+        <div className="glass-panel mt-12 border-rmec-gold/25 p-6 sm:p-8">
           <p className="font-serif text-lg font-semibold text-rmec-gold-light">
             Apostolic declaration
           </p>

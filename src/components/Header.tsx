@@ -45,14 +45,14 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border-subtle bg-surface-header backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border-subtle/90 bg-surface-header/95 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link
           href="/"
           className="flex items-center gap-3 shrink-0"
           onClick={() => setOpen(false)}
         >
-          <span className="relative h-11 w-11 overflow-hidden rounded-md ring-1 ring-rmec-gold/40 shadow-[var(--shadow-gold-glow)]">
+          <span className="relative h-11 w-11 overflow-hidden rounded-xl border border-rmec-gold/40 bg-surface-panel ring-1 ring-rmec-gold/20 shadow-[var(--shadow-gold-glow)]">
             <Image
               src="/brand/rmec-official-logo.png"
               alt="RMEC International official logo"
@@ -72,7 +72,7 @@ export function Header() {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-1 rounded-xl border border-border-subtle bg-surface-panel px-1 py-1 md:flex" aria-label="Main">
           {links.map((l) => (
             <NavLink key={l.href} href={l.href} label={l.label} />
           ))}
@@ -121,7 +121,7 @@ export function Header() {
           className="border-t border-border-subtle bg-surface-header-mobile px-4 py-3 md:hidden"
           aria-label="Mobile"
         >
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 rounded-xl border border-border-subtle bg-surface-panel p-2">
             {links.map((l) => (
               <NavLink
                 key={l.href}

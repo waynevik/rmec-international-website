@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <footer className="mt-auto border-t border-border-subtle bg-surface-footer">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="section-shell grid gap-10 p-6 sm:grid-cols-2 sm:p-8 lg:grid-cols-3">
           <div>
             <p className="font-serif text-2xl font-semibold text-gradient-gold">
               {site.name}
