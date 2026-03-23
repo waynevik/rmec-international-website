@@ -32,16 +32,7 @@ export default function ContactPage() {
         </h1>
         <p className="mt-4 text-muted leading-relaxed">
           For partnerships, ministry inquiries, and general information about{" "}
-          {site.name}, please reach out through the channels below. You can
-          replace placeholder values using environment variables{" "}
-          <code className="rounded bg-code-bg px-1.5 py-0.5 text-xs text-rmec-gold">
-            NEXT_PUBLIC_RMEC_CONTACT_EMAIL
-          </code>{" "}
-          and{" "}
-          <code className="rounded bg-code-bg px-1.5 py-0.5 text-xs text-rmec-gold">
-            NEXT_PUBLIC_RMEC_CONTACT_PHONE
-          </code>
-          .
+          {site.name}, please reach out through the channels below.
         </p>
       </div>
 
